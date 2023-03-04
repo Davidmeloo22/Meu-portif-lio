@@ -1,0 +1,215 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+/*     border: 1px solid black;
+  /* Serve pra demarcar cara área da página
+*/
+}
+
+.cabecalho {
+    z-index: 1;
+    /* Serve pra deixar o cabecalho sobreposto */
+    justify-content: space-around;
+    /* Estar dando o espaçamento entre os itens dentro do HEADER */
+    padding: 16px;
+    /* estar dando espaçamento externo em todo o HEADER */
+    display: flex;
+    /* Permite o contanier (no caso essa div que estou chamando) ser flexivél pra ser ajustado e responsivo */
+    align-items: center;
+    /* Estar alinhando os itens */
+    height: 80px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    /* Estar separando os itens e jogando os 2 das pontas para a extremidade */
+    align-items: center;
+    /* centralizando os itens no meio */
+    width: 424px;
+    height: 64px;
+    /* largura da div */
+}
+
+.imagem-whatsapp {
+    width: 32px;
+    transition: transform 0.3s;
+    /* aidiconando uma transação(transition) e o tipo dela transform. esse MS é o tempo em que eu vou passar o mouse encima e ele vai fazer a animação */
+}
+
+.imagem-whatsapp:hover {
+    transform: scale(1.4);
+    /* transform estar pegando da div de cima e declarando ela embaixo. Scale é a escala que vai acontecer quando passar o mouse encima, e a númereção é o tamnho dessa escala*/
+}
+
+.imagem-linkedin {
+    width: 32px;
+    transition: transform 0.3s;
+}
+
+.imagem-linkedin:hover {
+    transform: scale(1.3);
+}
+
+.imagem-instagram {
+    width: 32px;
+    transition: transform 0.3s;
+}
+
+.imagem-instagram:hover {
+    transform: scale(1.3);
+}
+
+.imagem-gitub {
+    width: 32px;
+    transition: transform 0.3s;
+}
+
+.imagem-gitub:hover {
+    transform: scale(1.3);
+}
+
+.imagem-icone {
+    width: 60px;
+    margin: 10px;
+}
+
+.conteudo-imagem-icone {
+    position: absolute;
+    /* Define como absolutamente posicionado e é posicionado ao PAI mais próximo que tem uma posicão definida  */
+    left: 62px;
+    /* Estar pra esquerda do PAI */
+    width: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    /* Define o alinhamento horizontal dos filhos. Nesse caso a class .imagem-icone */
+    align-items: center;
+    /* Define o alinhamento vertical dos filhos. Nesse caso a class .imagem-icone */
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+     background-image: url(./Imagens/pexels-rahul-695644.jpg);
+    background-size: cover;
+}
+
+.conteudo-submain {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* .conteudo-principal{
+    position: absolute;
+    left: 62px;
+    top: 224px;
+    width: 30%;
+    height: auto;
+} */
+
+/* .conteudo-secundario{
+    position: absolute;
+    left: 1000px;
+    top: 324px;
+    width: 30%;
+    height: auto;
+} */
+
+
+
+
+
+.conteudo-geral {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    color: antiquewhite;
+    font-family: 'Julius Sans One', sans-serif;
+
+}
+
+.tamanho-botao {
+    padding: 4px;
+    border-radius: 100%;
+}
+
+
+.conteudo-principal {
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.conteudo-principal-h3{
+    font-size: 1.4em;
+}
+.conteudo-feedback{
+    font-size: 0.5em;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link {
+    display: flex;
+}
+
+
+.contanier {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.proximo {
+    padding: 8px 16px;
+    border-radius: 32px;
+}
+
+.anterio {
+    padding: 8px 16px;
+    border-radius: 32px;
+}
+
+.liked-botao{
+    display: flex;
+    width: 8rem;
+    height: 3em;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.subtitulo-secundario{
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+}
+
+.sub-subtitulo-secundario{
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
